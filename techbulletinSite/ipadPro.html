@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Project Description" />
+    <meta name="keywords" content="Project Keywords" />
+    <title>Random Folio</title>	
+    <link href="css/style.css" rel="stylesheet" type="text/css" />			
+		<script src="src/Chart.js"></script>	
+    	  <script src="src/jquery-ui.js"></script>
+  <script src="src/jquery-ui.min.js"></script>
+    <!--[if IE]><link href="css/style-ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
+<body>
+    
+	<script>
+	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+	var barChartData = {
+		labels : ["Camera","Graphics","Speaker","Call Quality","RAM","Battery","ValueForMoney"],
+		datasets : [
+			
+			{
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,0.8)",
+				highlightFill : "rgba(151,187,205,0.75)",
+				highlightStroke : "rgba(151,187,205,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			}
+		]
+
+	}
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myBar = new Chart(ctx).Bar(barChartData, {
+			responsive : true
+		});
+	}
+
+	</script>   
+	
+    <div id="header" class="clearfix">
+        <div class="wrap">
+            <div id="header-logo" class="fl">
+                <h1>RANDOM<span>FOLIO</span></h1>
+            </div><!-- // end #header-logo -->
+            <div id="nav" class="fr">
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="appleIndex.html">Apple</a></li>
+                    <li><a href="microsoftIndex.html">Microsoft</a></li>
+                    <li><a href="googleIndex.html">Google</a></li>
+                    <li><a href="othersIndex.html">Others</a></li>
+                </ul>
+            </div><!-- // end #nav -->
+        </div><!-- // end .wrap -->
+    </div><!-- // end #header -->
+    
+    <div id="blurb">
+        <div class="wrap">
+            <h1>iPad Pro</h1>
+            <p>THE 12.9 INCH IPAD PRO IS FINALLY A REALITY</p>
+        </div><!-- // end .wrap -->
+    </div><!-- // end #blurb -->    
+
+    <div class="wrap">                                
+        <div class="content clearfix">
+            <div class="col-3 fl">
+                <h2>THE 12.9 INCH IPAD PRO IS FINALLY A REALITY</h2>                
+                <p>At the Apple launch, Tim Cook announced “The biggest news in iPad since the iPad”. The new iPad Pro is the company’s push for the iPad in a big way. It is the “biggest screen on an iOS device, with more power and performance than any iOS device.”
+                <p><img width="700px" src="images/ipadPro1.jpg" alt="ipadPro" class="portfolio-entry" /></p>
+                <p>According to the company, the iPad Pro is thin enough to hold all day long and buoyant enough to be used as a flotation device in case of emergency. But we feel like it may just be too big to hold in one hand.</p>
+				
+						<div style="width: 100%">
+			<canvas id="canvas" height="450" width="700"></canvas>
+		</div>
+				
+<p>
+The iPad Pro is upto 1.8X faster than the previous models and is faster than 80% of the portable PCs that have been released. It boasts of a desktop class performance and a great sound system, which includes a four-speaker audio system that balances stereo and frequencies depending on how you hold it.</p>
+<p>
+Apple introduced two new features – the physical keyboard and the Apple Pencil. The keyboard can be attached to the iPad magnetically. The Apple Pencil was introduced to almost lukewarm reactions from the crowd. The stylus has a built in lightning cable for charging.</p>
+<p><img width="700px" src="images/ipadPro2.png" alt="apple pro" class="portfolio-entry" /></p>
+                
+                <p>Apple in a surprising and amusing move, gave the stage to the Microsoft Office team headed by Kirk Konigsbauer, who introduced the Microsoft Office for the iPad. Using iOS9 multitasking, you can have word and excel on the screen at the same time. Earlier, Samsung came out with a multitasking feature, but Apple looks to make it more efficient and user friendly.</p>   
+				<p><img width="700px" src="images/ipadPro3.jpg" alt="apple pro" class="portfolio-entry" /></p>
+<p>The app shows 3D models of the body, animated in real time. This app is sure to help both patients and medical professionals because the advantages seem to reach far and wide as one can draw out surgeries and get a look of injuries in 3D.</p>
+<p>Last year’s iPad Air 2, had a new display, upgraded A8X chip, 6.1mm thin, less than a pound. This year’s new iPad, the iPad Pro, has a better display, upgraded A9X, slightly thicker, slightly heavier. The 32/128 (Wi-Fi)/128 (Wi-Fi + Cellular) GB iPad Pro will cost $799/ $949/ $1079 respectively, the Pencil will cost $99 and the keyboard will be $169.</p>		
+<p>The iPad Pro is a designer’s dream come true because of the apps and features it offers. However, only the future will tell us how it will make an impact in terms of usage, to the common man. Let us know what you think about this wonder, in the comments below.</p>			
+            </div><!-- // end .col-2 .fl -->
+			<a href="iPadProReviews.html">Enter your Ratings and Comments</a>
+            <div class="col-1 fr">
+			
+                <h2>More</h2>                
+               <ul>
+                    <li><a href="Nexus6.html">Nexus 6</a></li>
+                    <li><a href="Nexus10.html">Nexus 10</a></li>
+                    <li><a href="iphone6s.html">iPhone6s</a></li>
+                    <li><a href="ipadPro.html">iPadPro</a></li>
+                    <li><a href="appleWatch.html">appleWatch</a></li>
+                    <li><a href="IOS9.html">ios9</a></li>
+                    <li><a href="appleEvent.html">AppleEvent</a></li>
+                    <li><a href="surfacePro.html">SurfacePro</a></li>
+                    <li><a href="TVcam.html">Tvcam</a></li>
+                    <li><a href="amazonTv.html">AmazonFireTv</a></li>   
+                    <li><a href="samsungS6.html">Samsung Edge</a></li>  	
+                    <li><a href="applePencil.html">apple pencil</a></li>  					
+                </ul>
+            </div><!-- // end .col-1 .fr -->
+        </div><!-- // end .content -->        
+        
+    </div><!-- // end .wrap -->
+    
+</body>
+</html>

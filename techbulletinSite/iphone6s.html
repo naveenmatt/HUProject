@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Project Description" />
+    <meta name="keywords" content="Project Keywords" />
+    <title>TECH BULLETIN</title>	
+    <link href="css/style.css" rel="stylesheet" type="text/css" />			
+    <!--[if IE]><link href="css/style-ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<script src="src/Chart.js"></script>	
+    	  <script src="src/jquery-ui.js"></script>
+  <script src="src/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+<script>
+	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+	var barChartData = {
+		labels : ["Camera","Graphics","Speaker","Call Quality","RAM","Battery","ValueForMoney"],
+		datasets : [
+			
+			{
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,0.8)",
+				highlightFill : "rgba(151,187,205,0.75)",
+				highlightStroke : "rgba(151,187,205,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			}
+		]
+
+	}
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myBar = new Chart(ctx).Bar(barChartData, {
+			responsive : true
+		});
+	}
+
+	</script>   
+
+   
+    <div id="header" class="clearfix">
+        <div class="wrap">
+            <div id="header-logo" class="fl">
+                <h1>TECH<span>BULLETIN</span></h1>
+            </div><!-- // end #header-logo -->
+            <div id="nav" class="fr">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="appleIndex.html">Apple</a></li>
+                    <li><a href="microsoftIndex.html">Microsoft</a></li>
+                    <li><a href="googleIndex.html">Google</a></li>
+                    <li><a href="othersIndex.html">Others</a></li>
+                </ul>
+            </div><!-- // end #nav -->
+        </div><!-- // end .wrap -->
+    </div><!-- // end #header -->
+    
+    <div id="blurb">
+        <div class="wrap">
+            <h1>iPhone 6S</h1>
+            <p>THE IPHONE 6S FINALLY MAKES ITS TECH CARPET ENTRY</p>
+        </div><!-- // end .wrap -->
+    </div><!-- // end #blurb -->    
+
+    <div class="wrap">                                
+        <div class="content clearfix">
+            <div class="col-3 fl">
+                <h2>“The Only Thing That’s Changed Is Everything.”</h2>   
+                  <a href="iphone6sVsSamsung.html">Read Iphone 6s vs Samsung Edge</a>				
+                <p>The moment has arrived, when Apple finally reveals its iPhone 6s smartphone. We have been covering all sorts of rumours and reports about this handset the moment we got wind of it. Price, display, specifications and software – we’ve heard it all, and now is that moment of truth where we find out what this hype is all about and most importantly, whether it’s been worth it. Their opening statement is this:</p>
+                <p><img width="700px" src="images/iphone6s1.jpg" alt="ipadPro" class="portfolio-entry" /></p>
+						<div style="width: 100%">
+			<canvas id="canvas" height="450" width="700"></canvas>
+		</div>
+                <p>Let’s start with the most obvious – the price. Earlier reports suggested that the iPhone 6s would arrive at around 699 euros which is Rs.52,084 approximately, for the 16GB version, 799 euros which is Rs.59,529 approximately, for the 64GB version and 899 euros which is Rs.66,980 approximately for the 128GB version. Here are the final numbers: the 16GB version is priced at $199, the 64GB version is $299 and the 128GB version is $399.</p>
+<p>
+Few exciting things we now know about the new iPhone is that they will feature animated wallpapers and that the Rose Gold colour variant we were anticipating is here! Now it’s up to you if you think rose gold is fashionable enough for you, because the ‘cool’ new iPhone definitely thinks it is.</p>
+<p>
+It comes with a brand new glass encasing this time, with the Ion-X and not the usual Sapphire Glass, and a new Taptic Engine which can be used to navigate the UI.</p>
+<p><img width="700px" src="images/iphone6s2.jpg" alt="apple taptic engine" class="portfolio-entry" /></p>
+                
+                <p>So, it was said that the new iPhone will have an updated 3D Force Touch technology – meaning that the sensors would be taking into account three different types of touch rather than two. This is also true. Apple has confirmed the 3D Force Touch feature, that makes  photos, emails, Messages, etc pop up on your display. You just need to press on an app to jump right into a feature. This feature also allows you to use apps and be active on them without even opening them.</p>   
+				<p>They’ve also mentioned that the phone will be running on the new iOS 9 and the smartphone will come integrated with the new A9 chip.<p>
+				<p>Let’s talk about something that the iPhone is most applauded for – its camera. The iPhone 6 Plus has had an 8MP camera with an optical image stabilization feature that made it the phone with game changing photography abilities. Well, the iPhone 6s is better than that – it has an all new iSight 12MP camera with deep trench isolation. That’s it. iPhone just won. The 12MP camera will now allow you to record videos in 4K resolution.</p>
+				<p><img width="700px" src="images/iphone6s3.jpg" alt="apple pro" class="portfolio-entry" /></p>
+<p>That was the rear camera, but the iPhone’s front camera, which is as big a star as the primary camera, now comes at 5 megapixels and full HD resolution, allowing better FaceTime and selfie opportunities to users. The front camera also comes with a true tone Retina Flash feature. The 3D Touch feature also extends itself into the still camera pictures by animating the photos into video, called Live Photos, which can also have sound.</p>
+		
+		
+		
+            </div><!-- // end .col-2 .fl -->
+			
+			 <a href="iPhone6sReviews.html">Enter your Ratings and Comments</a>
+			
+            <div class="col-1 fr">
+                <h2>More</h2>                
+                <ul>
+                    <li><a href="Nexus6.html">Nexus 6</a></li>
+                    <li><a href="Nexus10.html">Nexus 10</a></li>
+                    <li><a href="iphone6s.html">iPhone6s</a></li>
+                    <li><a href="ipadPro.html">iPadPro</a></li>
+                    <li><a href="appleWatch.html">appleWatch</a></li>
+                    <li><a href="IOS9.html">ios9</a></li>
+                    <li><a href="appleEvent.html">AppleEvent</a></li>
+                    <li><a href="surfacePro.html">SurfacePro</a></li>
+                    <li><a href="TVcam.html">Tvcam</a></li>
+                    <li><a href="amazonTv.html">AmazonFireTv</a></li>   
+                    <li><a href="samsungS6.html">Samsung Edge</a></li>  	
+                    <li><a href="applePencil.html">apple pencil</a></li>  					
+                </ul>
+                       
+            </div><!-- // end .col-1 .fr -->
+        </div><!-- // end .content -->        
+        
+    </div><!-- // end .wrap -->
+    
+</body>
+</html>

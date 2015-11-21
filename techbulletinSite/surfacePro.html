@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Project Description" />
+    <meta name="keywords" content="Project Keywords" />
+    <title>Random Folio</title>	
+    <link href="css/style.css" rel="stylesheet" type="text/css" />	
+		<script src="src/Chart.js"></script>	
+    	  <script src="src/jquery-ui.js"></script>
+  <script src="src/jquery-ui.min.js"></script>		
+    <!--[if IE]><link href="css/style-ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
+<body>
+        	<script>
+	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+	var barChartData = {
+		labels : ["Camera","Graphics","Speaker","Call Quality","RAM","Battery","ValueForMoney"],
+		datasets : [
+			
+			{
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,0.8)",
+				highlightFill : "rgba(151,187,205,0.75)",
+				highlightStroke : "rgba(151,187,205,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			}
+		]
+
+	}
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myBar = new Chart(ctx).Bar(barChartData, {
+			responsive : true
+		});
+	}
+
+	</script>  
+    <div id="header" class="clearfix">
+        <div class="wrap">
+            <div id="header-logo" class="fl">
+                <h1>TECH<span>BULLETIN</span></h1>
+            </div><!-- // end #header-logo -->
+            <div id="nav" class="fr">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="appleIndex.html">Apple</a></li>
+                    <li class="active"><a href="microsoftIndex.html">Microsoft</a></li>
+                    <li><a href="googleIndex.html">Google</a></li>
+                    <li><a href="othersindex.html">Others</a></li>
+                </ul>
+            </div><!-- // end #nav -->
+        </div><!-- // end .wrap -->
+    </div><!-- // end #header -->
+    
+    <div id="blurb">
+        <div class="wrap">
+            <h1>Microsoft Surface Pro</h1>
+            <p>microsoft answer to ipad</p>
+        </div><!-- // end .wrap -->
+    </div><!-- // end #blurb -->    
+
+    <div class="wrap">                                
+        <div class="content clearfix">
+            <div class="col-3 fl">
+                <h2>The tablet that can replace your laptop</h2>                
+                <p>The Surface Pro 3 is closer than Microsoft has ever been to making good on its mobile computing vision. After over a week with the slate, I'd go so far as to say that the Pro 3 is closer than any laptop-tablet hybrid released yet.</p>
+				<p>Microsoft was so sure of itself that not only did it directly compare the Pro 3 to Apple's iPad Air and 13-inch MacBook Air, it gave members of the press pre-release Surface Pro 3 units during an announcement event in New York. Sure, the units have bugs as of this review, but who cares?</p>
+                <p><img width="700px" src="images/surface1.jpg" alt="surface" class="portfolio-entry" /></p>
+											<div style="width: 100%">
+			<canvas id="canvas" height="450" width="700"></canvas>
+		</div>
+				<p>"I forced the giving away of the device, just so you're aware," Surface team lead Panos Panay told me just after the reveal. "I said, 'You know what? I want the product in people's hands.' 'But the bugs are still there. They're not all done until June 20, until it's on market.' I don't care. The purity of the device is still true, and on June 20 there will be more drops."</p>
+				<h2>Work AnyWhere: </h2>
+               
+				 <p><img width="700px" src="images/surface2.png" alt="surface" class="portfolio-entry" /></p>
+				 <h2>Runs Windows, Office, desktop apps, and browsers</h2>
+				 <p>Surface Pro 3 comes with Windows 10, so you can use all your favorite touch apps and desktop software, like Office, and even ask Cortana† to remind you about important events.</p>
+				
+				 <p><img width="700px" src="images/Surface3.jpg" alt="surface" class="portfolio-entry" /></p>
+				
+				
+<p>
+It's also available in many more countries, including 25 new markets for the first time. According to Microsoft, the device has proved such a popular debutant in those markets that it's struggled to meet demand. "For those of you waiting for Surface Pro 3 (or for the specific version that is just right for you): hang tight, we are shipping in new products as fast as we can," Microsoft wrote in a blog post on September 12. "We should be in a much better position in the next week or two."</p>
+ 
+            </div><!-- // end .col-2 .fl -->
+				<a href="surfaceProReviews.html">Enter your Ratings and Comments</a>
+            <div class="col-1 fr">
+                 <h2>More</h2>                
+                <ul>
+                    <li><a href="Nexus6.html">Nexus 6</a></li>
+                    <li><a href="Nexus10.html">Nexus 10</a></li>
+                    <li><a href="iphone6s.html">iPhone6s</a></li>
+                    <li><a href="ipadPro.html">iPadPro</a></li>
+                    <li><a href="appleWatch.html">appleWatch</a></li>
+                    <li><a href="IOS9.html">ios9</a></li>
+                    <li><a href="appleEvent.html">AppleEvent</a></li>
+                    <li><a href="surfacePro.html">SurfacePro</a></li>
+                    <li><a href="TVcam.html">Tvcam</a></li>
+                    <li><a href="amazonTv.html">AmazonFireTv</a></li>   
+                    <li><a href="samsungS6.html">Samsung Edge</a></li>  	
+                    <li><a href="applePencil.html">apple pencil</a></li>  					
+                </ul>
+                          
+            </div><!-- // end .col-1 .fr -->
+        </div><!-- // end .content -->        
+        
+    </div><!-- // end .wrap -->
+    
+</body>
+</html>

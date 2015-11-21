@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Project Description" />
+    <meta name="keywords" content="Project Keywords" />
+    <title>Random Folio</title>	
+    <link href="css/style.css" rel="stylesheet" type="text/css" />			
+    <!--[if IE]><link href="css/style-ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <script src="src/jquery-1.11.3.min.js"></script>
+    <link href="css/roundslider.css" rel="stylesheet" />
+    <script src="src/roundslider.js"></script>	
+	
+</head>
+
+<body>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#type").roundSlider({
+                value: 45,
+            });
+            $("#shape").roundSlider({
+                value: 60,
+                sliderType: "min-range"
+            });
+			   $("#shape1").roundSlider({
+                value: 40,
+                sliderType: "min-range"
+            });
+			   $("#shape2").roundSlider({
+                value: 30,
+                sliderType: "min-range"
+            });
+			   $("#shape3").roundSlider({
+                value: 70,
+                sliderType: "min-range"
+            });
+			   $("#shape4").roundSlider({
+                value: 20,
+                sliderType: "min-range"
+            });
+			   $("#shape5").roundSlider({
+                value: 80,
+                sliderType: "min-range"
+            });
+			
+        });
+        function sliderTypeChanged(e) {
+            $("#type").roundSlider({ sliderType: e.value });
+        }
+        function sliderShapeChanged(e) {
+            var options = { circleShape: e.value };
+            if (e.value == "pie") options["startAngle"] = 0;
+            else if (e.value == "custom-quarter" || e.value == "custom-half") options["startAngle"] = 45;
+            $("#shape").roundSlider(options);
+        }
+		
+		function btnSubmit() {
+    alert("Thank you for your comments");
+	location.href = "https://s3-us-west-2.amazonaws.com/techbulletin/Site/Nexus6.html";
+	
+}
+    </script>
+
+    <style>
+        h1 span {
+            font-size: 0.6em;
+        }
+        .types {
+          display: inline-block;
+          padding: 10px 30px;
+          border: 1px dotted;
+          margin-right: 20px;
+          overflow: hidden;
+        }
+        .container {
+          height: 80px;
+          width: 300px;
+        }
+        .container > div {
+          float: left;
+        }
+        .control {
+            margin-right: 70px;
+        }
+		
+button {
+  color: #1ABC9C;
+  border: 1px solid #1ABC9C;
+  font-weight: bold;font-size: 100%;
+}
+    </style>
+
+    
+    <div id="header" class="clearfix">
+        <div class="wrap">
+            <div id="header-logo" class="fl">
+                <h1>TECH<span>BULLETIN</span></h1>
+            </div><!-- // end #header-logo -->
+            <div id="nav" class="fr">
+                   <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="appleIndex.html">Apple</a></li>
+                    <li><a href="microsoftIndex.html">Microsoft</a></li>
+                    <li><a href="googleIndex.html">Google</a></li>
+                    <li><a href="othersIndex.html">Others</a></li>
+                </ul>
+            </div><!-- // end #nav -->
+        </div><!-- // end .wrap -->
+    </div><!-- // end #header -->
+    
+    <div id="blurb">
+        <div class="wrap">
+            <h1>Reviews and comments</h1>
+            <p>Enter your review comments about the project</p>
+        </div><!-- // end .wrap -->
+    </div><!-- // end #blurb -->    
+
+    <div class="wrap">                                
+        <div class="content clearfix">
+            <div class="col-3 fl">
+                <h2>Ratings and Comments</h2>           
+
+ 
+<table>
+<tr><td>Display</td><td><div id="shape"></div></td></tr>
+<tr><td>RAM</td><td><div id="shape1"></div></td></tr>
+<tr><td>Battery</td><td><div id="shape2"></div></td></tr>
+<tr><td>Graphics Performance</td><td><div id="shape3"></div></td></tr>
+<tr><td>Processor Performance</td><td><div id="shape4"></div></td></tr>
+<tr><td>Heating issue</td><td><div id="shape5"></div></td></tr>
+<tr><td>Review Comments</td><td><textarea rows="4" cols="40"></textarea></td></tr>
+<tr><td></td><td>
+<button onclick="btnSubmit()" type="submit" value="Submit">Submit</button></td></tr>
+</table>
+
+
+
+    
+       
+                
+        
+           
+
+   
+
+	
+                   
+            </div><!-- // end .col-2 .fl -->
+			<div></div>
+			
+            <div class="col-1 fr">
+                <h2>More</h2>                
+                <ul>
+                    <li><a href="Nexus6.html">Nexus 6</a></li>
+                    <li><a href="Nexus10.html">Nexus 10</a></li>
+                    <li><a href="iphone6s.html">iPhone6s</a></li>
+                    <li><a href="ipadPro.html">iPadPro</a></li>
+                    <li><a href="appleWatch.html">appleWatch</a></li>
+                    <li><a href="IOS9.html">ios9</a></li>
+                    <li><a href="appleEvent.html">AppleEvent</a></li>
+                    <li><a href="surfacePro.html">SurfacePro</a></li>
+                    <li><a href="TVcam.html">Tvcam</a></li>
+                    <li><a href="amazonTv.html">AmazonFireTv</a></li>   
+                    <li><a href="samsungS6.html">Samsung Edge</a></li>  	
+                    <li><a href="applePencil.html">apple pencil</a></li>  					
+                </ul>
+                       
+            </div><!-- // end .col-1 .fr -->
+        </div><!-- // end .content -->        
+        
+    </div><!-- // end .wrap -->
+    
+
+
+</body>
+</html>

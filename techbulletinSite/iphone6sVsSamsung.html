@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Project Description" />
+    <meta name="keywords" content="Project Keywords" />
+    <title>TECH BULLETIN</title>
+<script src="src/Chart.js"></script>	
+    	  <script src="src/jquery-ui.js"></script>
+  <script src="src/jquery-ui.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+ <script src="src/jquery-1.11.3.min.js"></script>
+
+
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	
+    <!--[if IE]><link href="css/style-ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+
+	
+</head>
+
+		
+
+<body>
+    
+<script>
+	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+	var barChartData = {
+		labels : ["Camera","Graphics","Speaker","Call Quality","RAM","Battery","ValueForMoney"],
+		datasets : [
+			{
+				fillColor : "rgba(220,220,220,0.5)",
+				strokeColor : "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(220,220,220,0.75)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			},
+			{
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,0.8)",
+				highlightFill : "rgba(151,187,205,0.75)",
+				highlightStroke : "rgba(151,187,205,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			}
+		]
+
+	}
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myBar = new Chart(ctx).Bar(barChartData, {
+			responsive : true
+		});
+	}
+
+	</script>
+	
+    <div id="header" class="clearfix">
+        <div class="wrap">
+            <div id="header-logo" class="fl">
+                <h1>TECH<span>BULLETIN</span></h1>
+            </div><!-- // end #header-logo -->
+            <div id="nav" class="fr">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="appleIndex.html">Apple</a></li>
+                    <li><a href="microsoftIndex.html">Microsoft</a></li>
+                    <li><a href="googleIndex.html">Google</a></li>
+                    <li><a href="othersIndex.html">Others</a></li>
+                </ul>
+            </div><!-- // end #nav -->
+        </div><!-- // end .wrap -->
+    </div><!-- // end #header -->
+    
+    <div id="blurb">
+        <div class="wrap">
+            <h1>iPhone 6S vs Samsung S6 Edge</h1>
+            <p>Based on customer inputs</p>
+        </div><!-- // end .wrap -->
+    </div><!-- // end #blurb -->    
+
+    <div class="wrap">                                
+        <div class="content clearfix">
+            <div class="col-3 fl">
+                <h2>“The Only Thing That’s Changed Is Everything.”</h2>   
+                
+                
+				<table>
+				<tr>
+				<td><img width="350px" src="images/iphone6s1.jpg" alt="ipadPro" class="portfolio-entry" /></td>
+				<td><img width="350px" src="images/s6_4.jpg" alt="apple taptic engine" class="portfolio-entry" /></td>
+				</tr>
+				</table>
+                
+				<p>
+
+
+				
+				<div style="width: 100%">
+			<canvas id="canvas" height="450" width="700"></canvas>
+		</div>
+
+                
+            </div><!-- // end .col-2 .fl -->
+            <div class="col-1 fr">
+                <h2>More</h2>                
+                <ul>
+                    <li><a href="Nexus6.html">Nexus 6</a></li>
+                    <li><a href="Nexus10.html">Nexus 10</a></li>
+                    <li><a href="iphone6s.html">iPhone6s</a></li>
+                    <li><a href="ipadPro.html">iPadPro</a></li>
+                    <li><a href="appleWatch.html">appleWatch</a></li>
+                    <li><a href="IOS9.html">ios9</a></li>
+                    <li><a href="appleEvent.html">AppleEvent</a></li>
+                    <li><a href="surfacePro.html">SurfacePro</a></li>
+                    <li><a href="TVcam.html">Tvcam</a></li>
+                    <li><a href="amazonTv.html">AmazonFireTv</a></li>   
+                    <li><a href="samsungS6.html">Samsung Edge</a></li>  	
+                    <li><a href="applePencil.html">apple pencil</a></li>  					
+                </ul>
+                       
+            </div><!-- // end .col-1 .fr -->
+        </div><!-- // end .content -->        
+        
+    </div><!-- // end .wrap -->
+    
+</body>
+</html>
