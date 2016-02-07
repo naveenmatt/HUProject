@@ -1,0 +1,59 @@
+﻿
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div>
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>FreeClassifieds.com</h4>
+                <ul class="nav nav-pills nav-stacked" bs-active-link>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("PostAd", "PostAd", "Home")</li>
+                    <li>@Html.ActionLink("Ads list", "AdsList", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul><br>
+            </div>
+
+            <div class="col-sm-9">
+                <hr>
+                <h2>Welcome to FreeClassifieds.com</h2>
+                <h4><small>This is a BETA site</small></h4>
+                <hr>
+                <div>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <td>Item Number</td>
+                                <td>Product Name</td>
+                                <td>Product Availability</td>
+                                <td>Product Price</td>
+                                <td>Customer Contact</td>
+
+                            </tr>
+                        </thead>
+                        @{
+                            foreach (var item in Model.AdsList)
+                            {
+                                <tr>
+                                    <td>@item.Id </td>
+                                    <td>@item.Adname </td>
+                                    <td>@item.Availability </td>
+                                    <td>@item.Price </td>
+                                    <td>@item.Contact  </td>
+
+                                </tr>
+                            }
+
+                        }
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
